@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreboard App</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="marquee" hidden>
+            <span class="marquee__letter">S</span>
+            <span class="marquee__letter">c</span>
+            <span class="marquee__letter">o</span>
+            <span class="marquee__letter">o</span>
+            <span class="marquee__letter">o</span>
+            <span class="marquee__letter">r</span>
+            <span class="marquee__letter">r</span>
+            <span class="marquee__letter">r</span>
+            <span class="marquee__letter">e</span>
+            <span class="marquee__letter">e</span>
+        </div>
+        <div class="points">
+            <span class="points__team points__team--blue">0</span>
+            <span class="points__versus">&#215;</span>
+            <span class="points__team points__team--red">0</span>
+        </div>
+    </main>
+
+    <aside class="tools">
+        <button id="tool-score-blue" title="Blue score" type="button" class="tools__button tools__button--blue">🏓</button>
+        <button id="tool-reduce-blue" title="Blue reduce" type="button" class="tools__button tools__button--blue">➖</button>
+        <button id="tool-win-blue" title="Blue win" type="button" class="tools__button tools__button--blue">🏆</button>
+        <button id="tool-win-red" title="Red win" type="button" class="tools__button tools__button--red">🏆</button>
+        <button id="tool-reduce-red" title="Red score" type="button" class="tools__button tools__button--red">🏓</button>
+        <button id="tool-score-red" title="Red reduce" type="button" class="tools__button tools__button--red">➖</button>
+    </aside>
+
+    <script id="serialized-team-map" type="application/json">
+    {
+        "blue": {
+            "name": "blue",
+            "points": 0,
+            "colorAsHex": "#3498DB"
+        },
+        "red": {
+            "name": "red",
+            "points": 0,
+            "colorAsHex": "#E74C3C"
+        }
+    }
+</script>
+    <script src="script.js"></script>
+</body>
+
+</html>
