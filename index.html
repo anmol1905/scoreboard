@@ -4,6 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="description" content="A 3D moon created using Three.js">
+    <meta name="author" content="Anveeg Sinha">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://voice-scoreboard.vercel.app">
+    <meta property="og:title" content="Voice Controlled Scoreboard">
+    <meta property="og:description" content="A Scoreboard that can be updated using microphone">
+    <meta property="og:image" content="https://voice-scoreboard.vercel.app/thumbnail.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://voice-scoreboard.vercel.app">
+    <meta property="twitter:title" content="Voice Controlled Scoreboard">
+    <meta property="twitter:description" content="A Scoreboard that can be updated using microphone">
+    <meta property="twitter:image" content="https://voice-scoreboard.vercel.app/thumbnail.png">
+
+    <link rel="icon" href="https://www.emoji.co.uk/files/emoji-one/activity-emoji-one/1676-table-tennis-paddle-and-ball.png"
+        type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
     <title>Scoreboard App</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
@@ -35,8 +56,8 @@
         <button id="tool-reduce-blue" title="Blue reduce" type="button" class="tools__button tools__button--blue">➖</button>
         <button id="tool-win-blue" title="Blue win" type="button" class="tools__button tools__button--blue">🏆</button>
         <button id="tool-win-red" title="Red win" type="button" class="tools__button tools__button--red">🏆</button>
-        <button id="tool-reduce-red" title="Red score" type="button" class="tools__button tools__button--red">🏓</button>
-        <button id="tool-score-red" title="Red reduce" type="button" class="tools__button tools__button--red">➖</button>
+        <button id="tool-score-red" title="Red score" type="button" class="tools__button tools__button--red">🏓</button>
+        <button id="tool-reduce-red" title="Red reduce" type="button" class="tools__button tools__button--red">➖</button>
     </aside>
 
     <script id="serialized-team-map" type="application/json">

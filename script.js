@@ -206,9 +206,6 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         if (command.includes('decrease red')) {
             tools('reduce', 'red')
         }
-        if (command.includes('nice')) {
-            displayNiceAnimation()
-        }
     };
 
     recognition.onend = function () {
