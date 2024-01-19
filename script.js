@@ -194,16 +194,16 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
         const last = event.results.length - 1;
         const command = event.results[last][0].transcript.trim().toLowerCase();
         console.log("💡 ~ command:", command)
-        if (command.includes('increase blue')) {
+        if (command.includes('score blue')) {
             tools('score', 'blue')
         }
-        if (command.includes('increase red')) {
+        if (command.includes('score red')) {
             tools('score', 'red')
         }
-        if (command.includes('decrease blue')) {
+        if (command.includes('reduce blue')) {
             tools('reduce', 'blue')
         }
-        if (command.includes('decrease red')) {
+        if (command.includes('reduce red')) {
             tools('reduce', 'red')
         }
     };
